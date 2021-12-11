@@ -1,0 +1,23 @@
+Our project is an implementation of the monopoly game using command line interface/
+
+Instructions on how to install and build the system:
+1. Download the zip file monopoly.zip
+2. Unzip the file
+3. Navigate to the monopoly directory
+4. Make the terminal full screen
+5. Enter "make build" in the command shell
+6. Enter "make play" in the command shell
+7. Play the game according to instructions printed in the command shell
+
+Available commands at the beginning of each round:
+- "roll": roll one die and move n steps forward (n is the outcome of rolling) 
+- "map": get information about the map, including the index, type, and price of each grid on the map
+- "grid [i]": get the index, type and price of the grid at index [i] 
+- "player [s]": get the name, balance, owned properties, and current position of player with username [s]
+- "quit": exit the game
+
+Available commands after Roll:
+- "buy": buy the current grid (success if balance is enough and the current grid is vacant)
+- "upgrade": upgrade the current grid if it is owned by you
+- "sell [i]": sell the grid owned by you at grid index i 
+- "continue": skip the command and wait for next roll

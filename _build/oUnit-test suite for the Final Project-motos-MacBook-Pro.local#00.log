@@ -1,0 +1,457 @@
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Runner: processes
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Chooser: simple
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Configuration suite_name = "test suite for the Final Project"
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Configuration cache_filename = "/Users/jiayuangu/Documents/cs3110/Monopoly_CS3110_final_project_fall_2021/_build/oUnit-$(suite_name).cache"
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Configuration run_gc_full_major = "true"
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Configuration display = "true"
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Configuration results_style_1_X = "false"
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Configuration testdata_dir = "none"
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Configuration health_check_interval = "1."
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Configuration verbose = "false"
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Configuration chooser = "simple"
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Configuration output_html_dir = "none"
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Configuration processes_kill_period = "5."
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Configuration runner = "processes"
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Configuration shards = "2"
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Configuration processes_grace_period = "5."
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Configuration log_encoding = "utf-8"
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Configuration output_junit_file = "none"
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Configuration ci = "false"
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Configuration output_file = "/Users/jiayuangu/Documents/cs3110/Monopoly_CS3110_final_project_fall_2021/_build/oUnit-$(suite_name)-$(shard_id).log"
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Using 2 workers maximum.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Starting worker number motos-MacBook-Pro.local#01.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Worker motos-MacBook-Pro.local#01 started.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Starting worker number motos-MacBook-Pro.local#02.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Worker motos-MacBook-Pro.local#02 started.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:1:grid 1's name is Carpenter Hall, test suite for the Final Project:0:grid 1's index is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:0:grid 1's index is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:1:grid 1's name is Carpenter Hall, test suite for the Final Project:0:grid 1's index is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:1:grid 1's name is Carpenter Hall.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:1:grid 1's name is Carpenter Hall, test suite for the Final Project:0:grid 1's index is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:0:grid 1's index is 0 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:1:grid 1's name is Carpenter Hall, test suite for the Final Project:0:grid 1's index is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:0:grid 1's index is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:1:grid 1's name is Carpenter Hall, test suite for the Final Project:0:grid 1's index is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:2:grid 2's name is Uris Hall, test suite for the Final Project:1:grid 1's name is Carpenter Hall.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:2:grid 2's name is Uris Hall.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:2:grid 2's name is Uris Hall, test suite for the Final Project:1:grid 1's name is Carpenter Hall.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:2:grid 2's name is Uris Hall is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:2:grid 2's name is Uris Hall, test suite for the Final Project:1:grid 1's name is Carpenter Hall.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:2:grid 2's name is Uris Hall.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:2:grid 2's name is Uris Hall, test suite for the Final Project:1:grid 1's name is Carpenter Hall.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:3:grid 1's grid type is Vacant_land 780., test suite for the Final Project:1:grid 1's name is Carpenter Hall.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:3:grid 1's grid type is Vacant_land 780..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:3:grid 1's grid type is Vacant_land 780., test suite for the Final Project:1:grid 1's name is Carpenter Hall.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:1:grid 1's name is Carpenter Hall is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:3:grid 1's grid type is Vacant_land 780., test suite for the Final Project:1:grid 1's name is Carpenter Hall.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:1:grid 1's name is Carpenter Hall.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:3:grid 1's grid type is Vacant_land 780., test suite for the Final Project:1:grid 1's name is Carpenter Hall.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:4:grid 1's grid type is Draw Card, test suite for the Final Project:3:grid 1's grid type is Vacant_land 780..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:4:grid 1's grid type is Draw Card.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:4:grid 1's grid type is Draw Card, test suite for the Final Project:3:grid 1's grid type is Vacant_land 780..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:3:grid 1's grid type is Vacant_land 780. is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:4:grid 1's grid type is Draw Card, test suite for the Final Project:3:grid 1's grid type is Vacant_land 780..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:3:grid 1's grid type is Vacant_land 780..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:4:grid 1's grid type is Draw Card, test suite for the Final Project:3:grid 1's grid type is Vacant_land 780..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:5:grid 1''s grid type is Hospital, test suite for the Final Project:4:grid 1's grid type is Draw Card.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:5:grid 1''s grid type is Hospital.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:5:grid 1''s grid type is Hospital, test suite for the Final Project:4:grid 1's grid type is Draw Card.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:4:grid 1's grid type is Draw Card is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:5:grid 1''s grid type is Hospital, test suite for the Final Project:4:grid 1's grid type is Draw Card.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:4:grid 1's grid type is Draw Card.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:5:grid 1''s grid type is Hospital, test suite for the Final Project:4:grid 1's grid type is Draw Card.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:6:grid_1_owned's toll is 400., test suite for the Final Project:5:grid 1''s grid type is Hospital.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:6:grid_1_owned's toll is 400..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:6:grid_1_owned's toll is 400., test suite for the Final Project:5:grid 1''s grid type is Hospital.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:5:grid 1''s grid type is Hospital is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:6:grid_1_owned's toll is 400., test suite for the Final Project:5:grid 1''s grid type is Hospital.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:5:grid 1''s grid type is Hospital.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:6:grid_1_owned's toll is 400., test suite for the Final Project:5:grid 1''s grid type is Hospital.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:7:grid_2_owned's toll is 600., test suite for the Final Project:6:grid_1_owned's toll is 400..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:7:grid_2_owned's toll is 600..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:7:grid_2_owned's toll is 600., test suite for the Final Project:6:grid_1_owned's toll is 400..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:6:grid_1_owned's toll is 400. is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:7:grid_2_owned's toll is 600., test suite for the Final Project:6:grid_1_owned's toll is 400..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:6:grid_1_owned's toll is 400..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:7:grid_2_owned's toll is 600., test suite for the Final Project:6:grid_1_owned's toll is 400..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:8:grid_1_owned's owner is "Goose", test suite for the Final Project:7:grid_2_owned's toll is 600..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:8:grid_1_owned's owner is "Goose".
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:8:grid_1_owned's owner is "Goose", test suite for the Final Project:7:grid_2_owned's toll is 600..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:7:grid_2_owned's toll is 600. is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:8:grid_1_owned's owner is "Goose", test suite for the Final Project:7:grid_2_owned's toll is 600..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:7:grid_2_owned's toll is 600..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:8:grid_1_owned's owner is "Goose", test suite for the Final Project:7:grid_2_owned's toll is 600..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:9:grid_2_owned's owner is "Cat", test suite for the Final Project:8:grid_1_owned's owner is "Goose".
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:9:grid_2_owned's owner is "Cat".
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:9:grid_2_owned's owner is "Cat", test suite for the Final Project:8:grid_1_owned's owner is "Goose".
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:8:grid_1_owned's owner is "Goose" is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:9:grid_2_owned's owner is "Cat", test suite for the Final Project:8:grid_1_owned's owner is "Goose".
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:8:grid_1_owned's owner is "Goose".
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:9:grid_2_owned's owner is "Cat", test suite for the Final Project:8:grid_1_owned's owner is "Goose".
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:10:grid_1_owned's level is 0, test suite for the Final Project:9:grid_2_owned's owner is "Cat".
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:10:grid_1_owned's level is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:10:grid_1_owned's level is 0, test suite for the Final Project:9:grid_2_owned's owner is "Cat".
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:9:grid_2_owned's owner is "Cat" is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:10:grid_1_owned's level is 0, test suite for the Final Project:9:grid_2_owned's owner is "Cat".
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:9:grid_2_owned's owner is "Cat".
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:10:grid_1_owned's level is 0, test suite for the Final Project:9:grid_2_owned's owner is "Cat".
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:11:grid_2_owned's level is 5, test suite for the Final Project:10:grid_1_owned's level is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:11:grid_2_owned's level is 5.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:11:grid_2_owned's level is 5, test suite for the Final Project:10:grid_1_owned's level is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:10:grid_1_owned's level is 0 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:11:grid_2_owned's level is 5, test suite for the Final Project:10:grid_1_owned's level is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:10:grid_1_owned's level is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:11:grid_2_owned's level is 5, test suite for the Final Project:10:grid_1_owned's level is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:12:grid_3_owned's level is 3, test suite for the Final Project:11:grid_2_owned's level is 5.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:12:grid_3_owned's level is 3.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:12:grid_3_owned's level is 3, test suite for the Final Project:11:grid_2_owned's level is 5.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:11:grid_2_owned's level is 5 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:12:grid_3_owned's level is 3, test suite for the Final Project:11:grid_2_owned's level is 5.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:11:grid_2_owned's level is 5.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:12:grid_3_owned's level is 3, test suite for the Final Project:11:grid_2_owned's level is 5.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:13:grid_1_owned's price is 2000., test suite for the Final Project:12:grid_3_owned's level is 3.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:12:grid_3_owned's level is 3 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:13:grid_1_owned's price is 2000., test suite for the Final Project:12:grid_3_owned's level is 3.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:12:grid_3_owned's level is 3.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:13:grid_1_owned's price is 2000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:13:grid_1_owned's price is 2000., test suite for the Final Project:12:grid_3_owned's level is 3.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:14:grid_1_owned's price is 2000., test suite for the Final Project:13:grid_1_owned's price is 2000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:14:grid_1_owned's price is 2000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:14:grid_1_owned's price is 2000., test suite for the Final Project:13:grid_1_owned's price is 2000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:13:grid_1_owned's price is 2000. is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:14:grid_1_owned's price is 2000., test suite for the Final Project:13:grid_1_owned's price is 2000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:13:grid_1_owned's price is 2000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:14:grid_1_owned's price is 2000., test suite for the Final Project:13:grid_1_owned's price is 2000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:15:grid_1's type is changed to Hospital, test suite for the Final Project:14:grid_1_owned's price is 2000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:14:grid_1_owned's price is 2000. is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:15:grid_1's type is changed to Hospital, test suite for the Final Project:14:grid_1_owned's price is 2000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:14:grid_1_owned's price is 2000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:15:grid_1's type is changed to Hospital.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:15:grid_1's type is changed to Hospital, test suite for the Final Project:14:grid_1_owned's price is 2000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:16:grid_4's type is chanegd to Vacant_land 1000., test suite for the Final Project:15:grid_1's type is changed to Hospital.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:16:grid_4's type is chanegd to Vacant_land 1000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:16:grid_4's type is chanegd to Vacant_land 1000., test suite for the Final Project:15:grid_1's type is changed to Hospital.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:15:grid_1's type is changed to Hospital is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:16:grid_4's type is chanegd to Vacant_land 1000., test suite for the Final Project:15:grid_1's type is changed to Hospital.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:15:grid_1's type is changed to Hospital.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:16:grid_4's type is chanegd to Vacant_land 1000., test suite for the Final Project:15:grid_1's type is changed to Hospital.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:17:owned_land_1's price is 1000., test suite for the Final Project:16:grid_4's type is chanegd to Vacant_land 1000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:16:grid_4's type is chanegd to Vacant_land 1000. is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:17:owned_land_1's price is 1000., test suite for the Final Project:16:grid_4's type is chanegd to Vacant_land 1000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:16:grid_4's type is chanegd to Vacant_land 1000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:17:owned_land_1's price is 1000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:17:owned_land_1's price is 1000., test suite for the Final Project:16:grid_4's type is chanegd to Vacant_land 1000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:18:owned_land_2's price is 1000., test suite for the Final Project:17:owned_land_1's price is 1000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:18:owned_land_2's price is 1000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:18:owned_land_2's price is 1000., test suite for the Final Project:17:owned_land_1's price is 1000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:17:owned_land_1's price is 1000. is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:18:owned_land_2's price is 1000., test suite for the Final Project:17:owned_land_1's price is 1000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:17:owned_land_1's price is 1000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:18:owned_land_2's price is 1000. is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:18:owned_land_2's price is 1000., test suite for the Final Project:17:owned_land_1's price is 1000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:18:owned_land_2's price is 1000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:19:The size of map_1 is 4, test suite for the Final Project:18:owned_land_2's price is 1000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:20:The size of an empty map is 0, test suite for the Final Project:19:The size of map_1 is 4.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:19:The size of map_1 is 4.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:20:The size of an empty map is 0, test suite for the Final Project:19:The size of map_1 is 4.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:20:The size of an empty map is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:20:The size of an empty map is 0, test suite for the Final Project:19:The size of map_1 is 4.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:19:The size of map_1 is 4 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:20:The size of an empty map is 0, test suite for the Final Project:19:The size of map_1 is 4.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:19:The size of map_1 is 4.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:20:The size of an empty map is 0 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:20:The size of an empty map is 0, test suite for the Final Project:19:The size of map_1 is 4.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:20:The size of an empty map is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:21:Update the type grid_1 of map_1 to Hospital, test suite for the Final Project:20:The size of an empty map is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:22:Update the type of grid_0 of map_1 to Jail, test suite for the Final Project:21:Update the type grid_1 of map_1 to Hospital.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:22:Update the type of grid_0 of map_1 to Jail.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:22:Update the type of grid_0 of map_1 to Jail, test suite for the Final Project:21:Update the type grid_1 of map_1 to Hospital.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:21:Update the type grid_1 of map_1 to Hospital.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:22:Update the type of grid_0 of map_1 to Jail, test suite for the Final Project:21:Update the type grid_1 of map_1 to Hospital.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:21:Update the type grid_1 of map_1 to Hospital is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:22:Update the type of grid_0 of map_1 to Jail, test suite for the Final Project:21:Update the type grid_1 of map_1 to Hospital.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:21:Update the type grid_1 of map_1 to Hospital.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:22:Update the type of grid_0 of map_1 to Jail is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:22:Update the type of grid_0 of map_1 to Jail, test suite for the Final Project:21:Update the type grid_1 of map_1 to Hospital.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:22:Update the type of grid_0 of map_1 to Jail.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:23:Update the type of grid_4 of map_2 to Vacant_land with a price of 1000., test suite for the Final Project:22:Update the type of grid_0 of map_1 to Jail.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:23:Update the type of grid_4 of map_2 to Vacant_land with a price of 1000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:24:Update the type of grid4' of map2 to Owned_land, test suite for the Final Project:23:Update the type of grid_4 of map_2 to Vacant_land with a price of 1000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:24:Update the type of grid4' of map2 to Owned_land.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:24:Update the type of grid4' of map2 to Owned_land, test suite for the Final Project:23:Update the type of grid_4 of map_2 to Vacant_land with a price of 1000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:23:Update the type of grid_4 of map_2 to Vacant_land with a price of 1000. is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:24:Update the type of grid4' of map2 to Owned_land is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:24:Update the type of grid4' of map2 to Owned_land, test suite for the Final Project:23:Update the type of grid_4 of map_2 to Vacant_land with a price of 1000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:23:Update the type of grid_4 of map_2 to Vacant_land with a price of 1000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:24:Update the type of grid4' of map2 to Owned_land.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:24:Update the type of grid4' of map2 to Owned_land, test suite for the Final Project:23:Update the type of grid_4 of map_2 to Vacant_land with a price of 1000..
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:26:The grid in map_1 with index 0 is grid_0, test suite for the Final Project:25:Cannot update a grid in an empty map.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:25:Cannot update a grid in an empty map.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:26:The grid in map_1 with index 0 is grid_0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:26:The grid in map_1 with index 0 is grid_0, test suite for the Final Project:25:Cannot update a grid in an empty map.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:25:Cannot update a grid in an empty map is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:26:The grid in map_1 with index 0 is grid_0 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:26:The grid in map_1 with index 0 is grid_0, test suite for the Final Project:25:Cannot update a grid in an empty map.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:25:Cannot update a grid in an empty map.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:26:The grid in map_1 with index 0 is grid_0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:26:The grid in map_1 with index 0 is grid_0, test suite for the Final Project:25:Cannot update a grid in an empty map.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:28:Cannot get the grid with index 5 in a map of size 4, test suite for the Final Project:27:The grid in map_2 with index 4 is grid_4.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:27:The grid in map_2 with index 4 is grid_4.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:28:Cannot get the grid with index 5 in a map of size 4, test suite for the Final Project:27:The grid in map_2 with index 4 is grid_4.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:28:Cannot get the grid with index 5 in a map of size 4.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:28:Cannot get the grid with index 5 in a map of size 4, test suite for the Final Project:27:The grid in map_2 with index 4 is grid_4.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:27:The grid in map_2 with index 4 is grid_4 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:28:Cannot get the grid with index 5 in a map of size 4 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:28:Cannot get the grid with index 5 in a map of size 4, test suite for the Final Project:27:The grid in map_2 with index 4 is grid_4.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:27:The grid in map_2 with index 4 is grid_4.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:28:Cannot get the grid with index 5 in a map of size 4.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:28:Cannot get the grid with index 5 in a map of size 4, test suite for the Final Project:27:The grid in map_2 with index 4 is grid_4.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:30:Cannot get a grid with negative index, test suite for the Final Project:29:Cannot get the grid with index 4 in a map of size 4.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:29:Cannot get the grid with index 4 in a map of size 4.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:30:Cannot get a grid with negative index, test suite for the Final Project:29:Cannot get the grid with index 4 in a map of size 4.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:30:Cannot get a grid with negative index.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:30:Cannot get a grid with negative index, test suite for the Final Project:29:Cannot get the grid with index 4 in a map of size 4.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:29:Cannot get the grid with index 4 in a map of size 4 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:30:Cannot get a grid with negative index is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:30:Cannot get a grid with negative index, test suite for the Final Project:29:Cannot get the grid with index 4 in a map of size 4.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:29:Cannot get the grid with index 4 in a map of size 4.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:30:Cannot get a grid with negative index.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:30:Cannot get a grid with negative index, test suite for the Final Project:29:Cannot get the grid with index 4 in a map of size 4.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:32:bankrupt player's stay, test suite for the Final Project:31:normal player's stay.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:31:normal player's stay.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:32:bankrupt player's stay.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:32:bankrupt player's stay, test suite for the Final Project:31:normal player's stay.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:32:bankrupt player's stay is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:32:bankrupt player's stay, test suite for the Final Project:31:normal player's stay.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:31:normal player's stay is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:32:bankrupt player's stay.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:32:bankrupt player's stay, test suite for the Final Project:31:normal player's stay.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:31:normal player's stay.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:33:jail player's stay, test suite for the Final Project:31:normal player's stay.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:34:update stay from 0 to 3, test suite for the Final Project:33:jail player's stay.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:33:jail player's stay.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:34:update stay from 0 to 3, test suite for the Final Project:33:jail player's stay.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:34:update stay from 0 to 3.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:34:update stay from 0 to 3, test suite for the Final Project:33:jail player's stay.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:33:jail player's stay is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:34:update stay from 0 to 3, test suite for the Final Project:33:jail player's stay.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:33:jail player's stay.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:34:update stay from 0 to 3 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:34:update stay from 0 to 3, test suite for the Final Project:33:jail player's stay.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:34:update stay from 0 to 3.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:35:update stay from 3 to 0, test suite for the Final Project:34:update stay from 0 to 3.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:35:update stay from 3 to 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:36:update stay from 0 to -1, test suite for the Final Project:35:update stay from 3 to 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:36:update stay from 0 to -1.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:36:update stay from 0 to -1, test suite for the Final Project:35:update stay from 3 to 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:35:update stay from 3 to 0 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:36:update stay from 0 to -1, test suite for the Final Project:35:update stay from 3 to 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:35:update stay from 3 to 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:36:update stay from 0 to -1 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:36:update stay from 0 to -1, test suite for the Final Project:35:update stay from 3 to 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:36:update stay from 0 to -1.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:37:Update player_1 balance to 5000. and properties to grid_0, test suite for the Final Project:36:update stay from 0 to -1.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:38:[player_one] loses 1000$, test suite for the Final Project:37:Update player_1 balance to 5000. and properties to grid_0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:37:Update player_1 balance to 5000. and properties to grid_0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:38:[player_one] loses 1000$, test suite for the Final Project:37:Update player_1 balance to 5000. and properties to grid_0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:38:[player_one] loses 1000$.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:38:[player_one] loses 1000$, test suite for the Final Project:37:Update player_1 balance to 5000. and properties to grid_0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:37:Update player_1 balance to 5000. and properties to grid_0 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:38:[player_one] loses 1000$ is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:38:[player_one] loses 1000$, test suite for the Final Project:37:Update player_1 balance to 5000. and properties to grid_0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:37:Update player_1 balance to 5000. and properties to grid_0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:38:[player_one] loses 1000$.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:38:[player_one] loses 1000$, test suite for the Final Project:37:Update player_1 balance to 5000. and properties to grid_0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:40:[player_one] loses 5001$, triggers property trade, test suite for the Final Project:39:[player_one] loses 4998$.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:39:[player_one] loses 4998$.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:40:[player_one] loses 5001$, triggers property trade.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:40:[player_one] loses 5001$, triggers property trade, test suite for the Final Project:39:[player_one] loses 4998$.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:39:[player_one] loses 4998$ is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:40:[player_one] loses 5001$, triggers property trade is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:40:[player_one] loses 5001$, triggers property trade, test suite for the Final Project:39:[player_one] loses 4998$.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:39:[player_one] loses 4998$.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:40:[player_one] loses 5001$, triggers property trade.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:40:[player_one] loses 5001$, triggers property trade, test suite for the Final Project:39:[player_one] loses 4998$.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:42:[player_one] spends 780$ to buy [grid_0], test suite for the Final Project:41:[player_one] loses 7001$, triggers property trade.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:42:[player_one] spends 780$ to buy [grid_0].
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:42:[player_one] spends 780$ to buy [grid_0], test suite for the Final Project:41:[player_one] loses 7001$, triggers property trade.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:41:[player_one] loses 7001$, triggers property trade.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:42:[player_one] spends 780$ to buy [grid_0], test suite for the Final Project:41:[player_one] loses 7001$, triggers property trade.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:42:[player_one] spends 780$ to buy [grid_0] is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:42:[player_one] spends 780$ to buy [grid_0], test suite for the Final Project:41:[player_one] loses 7001$, triggers property trade.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:41:[player_one] loses 7001$, triggers property trade is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:42:[player_one] spends 780$ to buy [grid_0].
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:42:[player_one] spends 780$ to buy [grid_0], test suite for the Final Project:41:[player_one] loses 7001$, triggers property trade.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:41:[player_one] loses 7001$, triggers property trade.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:43:[player_3] sold grid_0_owned, test suite for the Final Project:41:[player_one] loses 7001$, triggers property trade.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:44:[player_3] sold grid_1_owned, test suite for the Final Project:43:[player_3] sold grid_0_owned.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:43:[player_3] sold grid_0_owned.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:44:[player_3] sold grid_1_owned.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:44:[player_3] sold grid_1_owned, test suite for the Final Project:43:[player_3] sold grid_0_owned.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:43:[player_3] sold grid_0_owned is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:44:[player_3] sold grid_1_owned is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:44:[player_3] sold grid_1_owned, test suite for the Final Project:43:[player_3] sold grid_0_owned.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:43:[player_3] sold grid_0_owned.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:44:[player_3] sold grid_1_owned.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:44:[player_3] sold grid_1_owned, test suite for the Final Project:43:[player_3] sold grid_0_owned.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:46:[player_1] pays toll of 5000 to [player_2], test suite for the Final Project:45:[player_1] pays toll of 1000 to [player_2].
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:45:[player_1] pays toll of 1000 to [player_2].
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:46:[player_1] pays toll of 5000 to [player_2], test suite for the Final Project:45:[player_1] pays toll of 1000 to [player_2].
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:46:[player_1] pays toll of 5000 to [player_2].
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:46:[player_1] pays toll of 5000 to [player_2], test suite for the Final Project:45:[player_1] pays toll of 1000 to [player_2].
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:46:[player_1] pays toll of 5000 to [player_2] is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:46:[player_1] pays toll of 5000 to [player_2], test suite for the Final Project:45:[player_1] pays toll of 1000 to [player_2].
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:45:[player_1] pays toll of 1000 to [player_2] is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:46:[player_1] pays toll of 5000 to [player_2].
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:46:[player_1] pays toll of 5000 to [player_2], test suite for the Final Project:45:[player_1] pays toll of 1000 to [player_2].
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:45:[player_1] pays toll of 1000 to [player_2].
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:47:[player_2] pays toll of 3000 to [player_1], test suite for the Final Project:45:[player_1] pays toll of 1000 to [player_2].
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:48:[player_2] pays toll of 5500 to [player_1], test suite for the Final Project:47:[player_2] pays toll of 3000 to [player_1].
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:47:[player_2] pays toll of 3000 to [player_1].
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:48:[player_2] pays toll of 5500 to [player_1], test suite for the Final Project:47:[player_2] pays toll of 3000 to [player_1].
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:48:[player_2] pays toll of 5500 to [player_1].
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:48:[player_2] pays toll of 5500 to [player_1], test suite for the Final Project:47:[player_2] pays toll of 3000 to [player_1].
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:47:[player_2] pays toll of 3000 to [player_1] is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:48:[player_2] pays toll of 5500 to [player_1] is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:48:[player_2] pays toll of 5500 to [player_1], test suite for the Final Project:47:[player_2] pays toll of 3000 to [player_1].
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:47:[player_2] pays toll of 3000 to [player_1].
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:48:[player_2] pays toll of 5500 to [player_1].
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:48:[player_2] pays toll of 5500 to [player_1], test suite for the Final Project:47:[player_2] pays toll of 3000 to [player_1].
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:50:upgrade [player_2]'s grid_cat to level 2, test suite for the Final Project:49:upgrade [player_2]'s grid_cat to level 1.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:49:upgrade [player_2]'s grid_cat to level 1.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:50:upgrade [player_2]'s grid_cat to level 2, test suite for the Final Project:49:upgrade [player_2]'s grid_cat to level 1.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:50:upgrade [player_2]'s grid_cat to level 2.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:50:upgrade [player_2]'s grid_cat to level 2, test suite for the Final Project:49:upgrade [player_2]'s grid_cat to level 1.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:49:upgrade [player_2]'s grid_cat to level 1 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:50:upgrade [player_2]'s grid_cat to level 2 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:50:upgrade [player_2]'s grid_cat to level 2, test suite for the Final Project:49:upgrade [player_2]'s grid_cat to level 1.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:49:upgrade [player_2]'s grid_cat to level 1.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:50:upgrade [player_2]'s grid_cat to level 2.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:50:upgrade [player_2]'s grid_cat to level 2, test suite for the Final Project:49:upgrade [player_2]'s grid_cat to level 1.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:52:[player_3]'s current grid index is 1, test suite for the Final Project:51:[player_1]'s current grid index is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:52:[player_3]'s current grid index is 1.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:52:[player_3]'s current grid index is 1, test suite for the Final Project:51:[player_1]'s current grid index is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:51:[player_1]'s current grid index is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:52:[player_3]'s current grid index is 1, test suite for the Final Project:51:[player_1]'s current grid index is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:51:[player_1]'s current grid index is 0 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:52:[player_3]'s current grid index is 1 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:52:[player_3]'s current grid index is 1, test suite for the Final Project:51:[player_1]'s current grid index is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:51:[player_1]'s current grid index is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:52:[player_3]'s current grid index is 1.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:52:[player_3]'s current grid index is 1, test suite for the Final Project:51:[player_1]'s current grid index is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:54:[player_2]'s balance is changed to 3500, test suite for the Final Project:53:[player_3]'s position is upgraded to grid_2.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:53:[player_3]'s position is upgraded to grid_2.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:54:[player_2]'s balance is changed to 3500, test suite for the Final Project:53:[player_3]'s position is upgraded to grid_2.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:54:[player_2]'s balance is changed to 3500.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:54:[player_2]'s balance is changed to 3500, test suite for the Final Project:53:[player_3]'s position is upgraded to grid_2.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:53:[player_3]'s position is upgraded to grid_2 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:54:[player_2]'s balance is changed to 3500 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:54:[player_2]'s balance is changed to 3500, test suite for the Final Project:53:[player_3]'s position is upgraded to grid_2.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:53:[player_3]'s position is upgraded to grid_2.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:54:[player_2]'s balance is changed to 3500.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:54:[player_2]'s balance is changed to 3500, test suite for the Final Project:53:[player_3]'s position is upgraded to grid_2.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:56:[player_one] has [grid_1] and [grid_2] as property , test suite for the Final Project:55:[player_one]'s current position is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:56:[player_one] has [grid_1] and [grid_2] as property .
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:56:[player_one] has [grid_1] and [grid_2] as property , test suite for the Final Project:55:[player_one]'s current position is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:55:[player_one]'s current position is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:56:[player_one] has [grid_1] and [grid_2] as property , test suite for the Final Project:55:[player_one]'s current position is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:56:[player_one] has [grid_1] and [grid_2] as property  is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:56:[player_one] has [grid_1] and [grid_2] as property , test suite for the Final Project:55:[player_one]'s current position is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:55:[player_one]'s current position is 0 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:56:[player_one] has [grid_1] and [grid_2] as property .
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:56:[player_one] has [grid_1] and [grid_2] as property , test suite for the Final Project:55:[player_one]'s current position is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:55:[player_one]'s current position is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:57:[player_one] has balance of 5000$, test suite for the Final Project:55:[player_one]'s current position is 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Start test test suite for the Final Project:57:[player_one] has balance of 5000$.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Still 2 tests running : test suite for the Final Project:58:The name is [player_one] is Goose, test suite for the Final Project:57:[player_one] has balance of 5000$.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:58:The name is [player_one] is Goose, test suite for the Final Project:57:[player_one] has balance of 5000$.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Start test test suite for the Final Project:58:The name is [player_one] is Goose.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Still 2 tests running : test suite for the Final Project:58:The name is [player_one] is Goose, test suite for the Final Project:57:[player_one] has balance of 5000$.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:58:The name is [player_one] is Goose, test suite for the Final Project:57:[player_one] has balance of 5000$.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: Test test suite for the Final Project:57:[player_one] has balance of 5000$ is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Still 2 tests running : test suite for the Final Project:58:The name is [player_one] is Goose, test suite for the Final Project:57:[player_one] has balance of 5000$.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:58:The name is [player_one] is Goose, test suite for the Final Project:57:[player_one] has balance of 5000$.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#02 I: End test test suite for the Final Project:57:[player_one] has balance of 5000$.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: Test test suite for the Final Project:58:The name is [player_one] is Goose is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Still 2 tests running : test suite for the Final Project:58:The name is [player_one] is Goose, test suite for the Final Project:57:[player_one] has balance of 5000$.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 2 tests running: test suite for the Final Project:58:The name is [player_one] is Goose, test suite for the Final Project:57:[player_one] has balance of 5000$.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#01 I: End test test suite for the Final Project:58:The name is [player_one] is Goose.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Still 1 tests running : test suite for the Final Project:58:The name is [player_one] is Goose.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 1 tests running: test suite for the Final Project:58:The name is [player_one] is Goose.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: 0 tests running: .
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Worker motos-MacBook-Pro.local#02 has ended.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Worker motos-MacBook-Pro.local#01 died unexpectedly.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Used 2 worker during test execution.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Run 30 tests with shard motos-MacBook-Pro.local#01.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Run 29 tests with shard motos-MacBook-Pro.local#02.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Check health of shard motos-MacBook-Pro.local#01, 2 times.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Check health of shard motos-MacBook-Pro.local#02, 2 times.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: ==============
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Summary:
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:58:The name is [player_one] is Goose is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:57:[player_one] has balance of 5000$ is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:55:[player_one]'s current position is 0 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:56:[player_one] has [grid_1] and [grid_2] as property  is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:54:[player_2]'s balance is changed to 3500 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:53:[player_3]'s position is upgraded to grid_2 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:52:[player_3]'s current grid index is 1 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:51:[player_1]'s current grid index is 0 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:50:upgrade [player_2]'s grid_cat to level 2 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:49:upgrade [player_2]'s grid_cat to level 1 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:48:[player_2] pays toll of 5500 to [player_1] is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:47:[player_2] pays toll of 3000 to [player_1] is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:45:[player_1] pays toll of 1000 to [player_2] is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:46:[player_1] pays toll of 5000 to [player_2] is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:44:[player_3] sold grid_1_owned is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:43:[player_3] sold grid_0_owned is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:41:[player_one] loses 7001$, triggers property trade is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:42:[player_one] spends 780$ to buy [grid_0] is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:40:[player_one] loses 5001$, triggers property trade is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:39:[player_one] loses 4998$ is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:38:[player_one] loses 1000$ is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:37:Update player_1 balance to 5000. and properties to grid_0 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:36:update stay from 0 to -1 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:35:update stay from 3 to 0 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:34:update stay from 0 to 3 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:33:jail player's stay is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:31:normal player's stay is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:32:bankrupt player's stay is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:30:Cannot get a grid with negative index is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:29:Cannot get the grid with index 4 in a map of size 4 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:28:Cannot get the grid with index 5 in a map of size 4 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:27:The grid in map_2 with index 4 is grid_4 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:26:The grid in map_1 with index 0 is grid_0 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:25:Cannot update a grid in an empty map is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:24:Update the type of grid4' of map2 to Owned_land is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:23:Update the type of grid_4 of map_2 to Vacant_land with a price of 1000. is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:22:Update the type of grid_0 of map_1 to Jail is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:21:Update the type grid_1 of map_1 to Hospital is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:20:The size of an empty map is 0 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:19:The size of map_1 is 4 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:18:owned_land_2's price is 1000. is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:17:owned_land_1's price is 1000. is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:16:grid_4's type is chanegd to Vacant_land 1000. is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:15:grid_1's type is changed to Hospital is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:14:grid_1_owned's price is 2000. is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:13:grid_1_owned's price is 2000. is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:12:grid_3_owned's level is 3 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:11:grid_2_owned's level is 5 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:10:grid_1_owned's level is 0 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:9:grid_2_owned's owner is "Cat" is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:8:grid_1_owned's owner is "Goose" is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:7:grid_2_owned's toll is 600. is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:6:grid_1_owned's toll is 400. is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:5:grid 1''s grid type is Hospital is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:4:grid 1's grid type is Draw Card is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:3:grid 1's grid type is Vacant_land 780. is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:1:grid 1's name is Carpenter Hall is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:2:grid 2's name is Uris Hall is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Test test suite for the Final Project:0:grid 1's index is 0 is successful.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Ran: 59 tests in: 0.13 seconds.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Cases: 59.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Tried: 59.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Errors: 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Failures: 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Skip: 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Todo: 0.
+2021-12-04T02:00:03+00:00 motos-MacBook-Pro.local#00 I: Timeout: 0.

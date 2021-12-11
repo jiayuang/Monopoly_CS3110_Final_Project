@@ -1,0 +1,18 @@
+(** @canonical Game.Author *)
+module Author = Game__Author
+
+
+(** @canonical Game.Command *)
+module Command = Game__Command
+
+
+(** @canonical Game.Game_map *)
+module Game_map = Game__Game_map
+
+
+(** @canonical Game.Grid *)
+module Grid = Game__Grid
+
+
+(** @canonical Game.Player *)
+module Player = Game__Player
