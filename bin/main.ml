@@ -133,8 +133,82 @@ let print_roll curr_pos : unit =
     \ \"continue\" to end your turn, ";
   print_string "> "
 
+(** [buy_sell_helper]'s function argument takes up 8 lines, which should
+    essentially be 1 line.*)
+let buy_sell_helper
+    roll_handler
+    updated_player
+    players
+    curr_pos_index
+    map
+    idx
+    g =
+  try
+    let tuple =
+      if idx = 0 then buy_land updated_player map curr_pos_index
+      else sell_land updated_player map g 1.
+    in
+    let new_map = fst tuple in
+    let new_player = snd tuple in
+    Printf.printf "Transaction succeeded. Current Balance: %f\n"
+      (get_player_balance new_player);
+    players.(0) <- new_player;
+    (new_map, players)
+  with
+  | Failure s ->
+      print_endline s;
+      roll_handler map players
+
+(*[buy_sell_upgrade] has to exceed line limits because it must pattern
+  match to six possible user prompts and OcamlFormat separates print
+  statements and expressions into multiple lines*)
+
+(** [buy_sell_upgrade]'s function argument takes up 7 lines, which
+    should essentially be 1 line. Also, 173-175, 181-182 and 176-178
+    should each be 1 line. *)
+let buy_sell_upgrade
+    roll_handler
+    handler
+    (updated_player : player)
+    (players : player array)
+    (curr_pos_index : int)
+    (map : map) : map * player array =
+  match parse (read_line ()) with
+  | Buy ->
+      buy_sell_helper roll_handler updated_player players curr_pos_index
+        map 0 0
+  | Sell g ->
+      buy_sell_helper roll_handler updated_player players curr_pos_index
+        map 1 g
+  | Upgrade -> (
+      try
+        let map_player =
+          upgrade_land updated_player map curr_pos_index
+        in
+        Printf.printf "Transaction succeeded. Current Balance: %f\n"
+          (get_player_balance (snd map_player));
+        players.(0) <- snd map_player;
+        (fst map_player, players)
+      with
+      | Failure s ->
+          print_endline s;
+          roll_handler map players)
+  | Continue -> (map, players)
+  | exception _ ->
+      print_endline "Invalid Command";
+      handler map players
+  | _ ->
+      print_endline "Invalid Command";
+      handler map players
+
+(* the [player_loop] functions has to exceed the limited number of lines
+   because of the inevitable OcamlFormat that pushes arguments and
+   expressions into separte lines. We has a total of 6 cases to pattern
+   math, and creating helper funtions for each case will destroy
+   readability*)
+
 (**[player_loop map players] process one turn for player and evaluates
-   to new information of [map] and [players]*)
+   to new information of [map] and [players] *)
 let player_loop map (players : player array) : map * player array =
   let rec handler map players =
     print_start ();
@@ -158,10 +232,8 @@ let player_loop map (players : player array) : map * player array =
           let curr_grid = get_grid_by_index map curr_pos_index in
           match get_grid_type curr_grid with
           | Draw_Card ->
-              let tuple = draw_card 0 players map in
-              let new_map = fst tuple in
-              let updated_players = snd tuple in
-              (new_map, updated_players)
+              let map_players = draw_card 0 players map in
+              (fst map_players, snd map_players)
           | Owned_land p ->
               let toll = get_grid_toll curr_grid in
               let owner_name = get_grid_ownership curr_grid in
@@ -173,62 +245,10 @@ let player_loop map (players : player array) : map * player array =
                 in
                 (fst output, snd output)
               else (map, players)
-          | _ -> (
+          | _ ->
               print_roll curr_pos;
-              match parse (read_line ()) with
-              | Buy -> (
-                  try
-                    let tuple =
-                      buy_land updated_player map curr_pos_index
-                    in
-                    let new_map = fst tuple in
-                    let new_player = snd tuple in
-                    Printf.printf
-                      "Transaction succeeded. Current Balance: %f\n"
-                      (get_player_balance new_player);
-                    players.(0) <- new_player;
-                    (new_map, players)
-                  with
-                  | Failure s ->
-                      print_endline s;
-                      roll_handler map players)
-              | Sell g -> (
-                  try
-                    let tuple = sell_land updated_player map g 1. in
-                    let new_map = fst tuple in
-                    let new_player = snd tuple in
-                    Printf.printf
-                      "Transaction succeeded. Current Balance: %f\n"
-                      (get_player_balance new_player);
-                    players.(0) <- new_player;
-                    (new_map, players)
-                  with
-                  | Failure s ->
-                      print_endline s;
-                      roll_handler map players)
-              | Upgrade -> (
-                  try
-                    let tuple =
-                      upgrade_land updated_player map curr_pos_index
-                    in
-                    let new_map = fst tuple in
-                    let new_player = snd tuple in
-                    Printf.printf
-                      "Transaction succeeded. Current Balance: %f\n"
-                      (get_player_balance new_player);
-                    players.(0) <- new_player;
-                    (new_map, players)
-                  with
-                  | Failure s ->
-                      print_endline s;
-                      roll_handler map players)
-              | Continue -> (map, players)
-              | exception _ ->
-                  print_endline "Invalid Command";
-                  handler map players
-              | _ ->
-                  print_endline "Invalid Command";
-                  handler map players)
+              buy_sell_upgrade roll_handler handler updated_player
+                players curr_pos_index map
         in
         roll_handler map players
     | Grid t ->
@@ -257,8 +277,34 @@ let player_loop map (players : player array) : map * player array =
   in
   handler map players
 
+let print_ai_roll steps curr_grid ai_idx =
+  print_endline
+    ("steps: " ^ string_of_int steps ^ ". AI_" ^ ai_idx ^ " is at grid "
+    ^ (curr_grid |> get_grid_index |> string_of_int))
+
+let print_ai_buy curr_grid curr_index ai_idx =
+  print_endline
+    ("AI_" ^ ai_idx ^ " bought " ^ get_grid_name curr_grid
+   ^ " at index "
+    ^ string_of_int curr_index
+    ^ "\n")
+
+let print_ai_upgrade curr_index curr_grid ai_idx =
+  print_endline
+    ("AI_" ^ ai_idx ^ " upgraded its property at index "
+    ^ string_of_int curr_index
+    ^ " to level "
+    ^ string_of_int (get_grid_level curr_grid + 1)
+    ^ "\n")
+
+(*OcamlFormat separates let and if expressions into multiple lines and
+  [ai_loop_1], thus surpassing the line limits for [ai_loop_1] function.
+  And we can't factor out subparts of the function because the random
+  number generator can't propagate into helper functions*)
+
 (**[ai_loop_1 map players] process one turn for ai_1 and evaluates to
    new information of [map] and [players]*)
+
 let ai_loop_1 map (players : player array) : map * player array =
   print_endline "AI_1's turn: \n";
   Random.self_init ();
@@ -267,9 +313,7 @@ let ai_loop_1 map (players : player array) : map * player array =
   players.(1) <- updated_AI;
   let curr_grid = get_player_curr_pos updated_AI in
   let curr_index = get_grid_index curr_grid in
-  print_endline
-    ("steps: " ^ string_of_int steps ^ ". AI_1 is at grid "
-    ^ (curr_grid |> get_grid_index |> string_of_int));
+  print_ai_roll steps curr_grid "1";
   match get_grid_type curr_grid with
   | Vacant_land p ->
       let balance = get_player_balance players.(1) in
@@ -278,10 +322,7 @@ let ai_loop_1 map (players : player array) : map * player array =
           buy_land players.(1) map (get_grid_index curr_grid)
         in
         players.(1) <- snd bought;
-        print_endline
-          ("AI_1 bought " ^ get_grid_name curr_grid ^ " at index "
-          ^ string_of_int curr_index
-          ^ "\n");
+        print_ai_buy curr_grid curr_index "1";
         (fst bought, players))
       else (
         players.(1) <- updated_AI;
@@ -295,12 +336,7 @@ let ai_loop_1 map (players : player array) : map * player array =
         let price = get_owned_land_price l in
         let curr_level = get_grid_level curr_grid in
         if balance >= price && curr_level < 5 then (
-          print_endline
-            ("AI_1 upgraded its property at index "
-            ^ string_of_int curr_index
-            ^ " to level "
-            ^ string_of_int (get_grid_level curr_grid + 1)
-            ^ "\n");
+          print_ai_upgrade curr_index curr_grid "1";
           let output =
             upgrade_land players.(1) map (get_grid_index curr_grid)
           in
@@ -315,12 +351,16 @@ let ai_loop_1 map (players : player array) : map * player array =
         bankruptcy_toll 1 recipient_idx players map toll
   | Draw_Card ->
       let tuple = draw_card 1 players map in
-      let new_map = fst tuple in
-      let updated_players = snd tuple in
-      (new_map, updated_players)
+      (fst tuple, snd tuple)
   | _ ->
       players.(1) <- updated_AI;
       (map, players)
+
+(*OcamlFormat separates let expressions, function arguments, and if else
+  statements into multiple lines. It has to handle four possible types
+  of grid. We can't factor out subparts of the function because the
+  random number generator wouldn't propagate into helper functions.All
+  these cause [ai_loop_2] surpassing the line limits *)
 
 (**[ai_loop_2 map players] process one turn for ai_2 and update
    information about [map] and [players]*)
@@ -332,9 +372,7 @@ let ai_loop_2 map (players : player array) : map * player array =
   players.(2) <- updated_AI;
   let curr_grid = get_player_curr_pos updated_AI in
   let curr_index = get_grid_index curr_grid in
-  print_endline
-    ("steps: " ^ string_of_int steps ^ ". AI_2 is at grid "
-    ^ (curr_grid |> get_grid_index |> string_of_int));
+  print_ai_roll steps curr_grid "2";
   match get_grid_type curr_grid with
   | Vacant_land p ->
       let balance = get_player_balance players.(2) in
@@ -345,10 +383,7 @@ let ai_loop_2 map (players : player array) : map * player array =
           buy_land players.(2) map (get_grid_index curr_grid)
         in
         players.(2) <- snd bought;
-        print_endline
-          ("AI_2 bought " ^ get_grid_name curr_grid ^ " at index "
-          ^ string_of_int curr_index
-          ^ "\n");
+        print_ai_buy curr_grid curr_index "2";
         (fst bought, players))
       else (
         players.(2) <- updated_AI;
@@ -364,12 +399,7 @@ let ai_loop_2 map (players : player array) : map * player array =
         Random.self_init ();
         let rand = Random.int 2 in
         if balance >= price && curr_level < 5 && rand = 1 then (
-          print_endline
-            ("AI_2 upgraded its property at index "
-            ^ string_of_int curr_index
-            ^ " to level "
-            ^ string_of_int (get_grid_level curr_grid + 1)
-            ^ "\n");
+          print_ai_upgrade curr_index curr_grid "2";
           let output =
             upgrade_land players.(2) map (get_grid_index curr_grid)
           in
@@ -384,12 +414,15 @@ let ai_loop_2 map (players : player array) : map * player array =
         bankruptcy_toll 2 recipient_idx players map toll
   | Draw_Card ->
       let tuple = draw_card 2 players map in
-      let new_map = fst tuple in
-      let updated_players = snd tuple in
-      (new_map, updated_players)
+      (fst tuple, snd tuple)
   | _ ->
       players.(2) <- updated_AI;
       (map, players)
+
+let print_num_players (num_players : int) =
+  print_endline
+    ("Number of players in the current game is "
+    ^ string_of_int num_players)
 
 (** [game_loop map players num_players player_index] runs the game for
     player who has [player_index] in [players] and update [map],
@@ -398,10 +431,12 @@ let ai_loop_2 map (players : player array) : map * player array =
     players. [num_players] records the remaining players in the game, if
     [num_players] = 1 then the person who left wins*)
 
+(*[game_loop] has to exceed limited length because this is the single
+  most important game engine that handles the logic of the game and
+  different stages of the game including how the game proceeds with some
+  players go bankrupted.*)
 let rec game_loop map players num_players player_index =
-  print_endline
-    ("Number of players in the current game is "
-    ^ string_of_int num_players);
+  print_num_players num_players;
   let curr_player = players.(player_index) in
   if num_players = 1 && get_stay curr_player <> -1 then
     print_endline (get_player_name curr_player ^ " won!")
@@ -418,7 +453,6 @@ let rec game_loop map players num_players player_index =
         ^ " mustn't move. Pause for " ^ string_of_int curr_stay
         ^ " rounds.");
       players.(player_index) <- update_stay curr_player (curr_stay - 1);
-
       game_loop !updated_map players num_players
         ((player_index + 1) mod Array.length players))
     else if player_index = 0 then (
@@ -427,36 +461,37 @@ let rec game_loop map players num_players player_index =
       let result = player_loop map players in
       let updated_players = snd result in
       updated_map := fst result;
-      if get_stay updated_players.(0) = -1 then
-        game_loop !updated_map updated_players (num_players - 1)
-          ((player_index + 1) mod Array.length updated_players)
-      else
-        game_loop !updated_map updated_players num_players
-          ((player_index + 1) mod Array.length updated_players))
+      game_loop_helper updated_players num_players updated_map
+        player_index 0)
     else if player_index = 1 then (
       (ANSITerminal.print_string [ ANSITerminal.cyan ])
         "------------------------AI_1's turn \n";
       let result = ai_loop_1 map players in
       let updated_players = snd result in
       updated_map := fst result;
-      if get_stay updated_players.(1) = -1 then
-        game_loop !updated_map updated_players (num_players - 1)
-          ((player_index + 1) mod Array.length updated_players)
-      else
-        game_loop !updated_map updated_players num_players
-          ((player_index + 1) mod Array.length updated_players))
+      game_loop_helper updated_players num_players updated_map
+        player_index 1)
     else (
       (ANSITerminal.print_string [ ANSITerminal.magenta ])
         "------------------------AI_2's turn \n";
       let result = ai_loop_2 map players in
       let updated_players = snd result in
       updated_map := fst result;
-      if get_stay updated_players.(2) = -1 then
-        game_loop !updated_map updated_players (num_players - 1)
-          ((player_index + 1) mod Array.length updated_players)
-      else
-        game_loop !updated_map updated_players num_players
-          ((player_index + 1) mod Array.length updated_players))
+      game_loop_helper updated_players num_players updated_map
+        player_index 2)
+
+and game_loop_helper
+    updated_players
+    num_players
+    updated_map
+    player_index
+    p_index =
+  if get_stay updated_players.(p_index) = -1 then
+    game_loop !updated_map updated_players (num_players - 1)
+      ((player_index + 1) mod Array.length updated_players)
+  else
+    game_loop !updated_map updated_players num_players
+      ((player_index + 1) mod Array.length updated_players)
 
 (**[change_index m counter] is a map with indexes in each grid arranges
    increasingly from 0 to 39*)

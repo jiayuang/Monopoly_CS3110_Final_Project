@@ -4,6 +4,22 @@ open Grid
 open Game_map
 open Player
 
+(* Test Plan: Most of the functions in grid.ml, game_map.ml and
+   player.ml were automatically tested by OUnit. Some functions in those
+   files were used to print messages in the terminal, and some execute
+   based on a random number generated within the function. Those kind of
+   functions were manually tested. We did not used OUnit to test the
+   functions in bin/main.ml because they are either print functions or
+   involve too much randomness when executing. Test cases were all
+   developed following black box testting. All of the functions in
+   command.ml were used in /bin/main.ml, so they were also indirectly
+   tested when we did manual testing for \bin\main.ml
+
+   To prove correctness, the OUnit test suites cover all the helper
+   functions exposed in .mli files. Functions that run the game and
+   involve more direct interactions with the players can be tested with
+   manually putting in all the possible commands exhaustively*)
+
 (** [pp_list pp_elt lst] pretty-prints list [lst], using [pp_elt] to
     pretty-print each element of [lst]. *)
 let pp_list pp_elt lst =

@@ -2,10 +2,10 @@
 # OCAMLPARAM: unset
 # Workspace root:
 # /Users/jiayuangu/Documents/cs3110/Monopoly_CS3110_final_project_fall_2021
-$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/px/pj81mm6x35q4m694lyhn3g0h0000gn/T/dune65bd0b.output 2> /dev/null
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/px/pj81mm6x35q4m694lyhn3g0h0000gn/T/duned7f715.output 2> /dev/null
 # Auto-detected concurrency: 8
 # disable binary cache
-$ /Users/jiayuangu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/px/pj81mm6x35q4m694lyhn3g0h0000gn/T/dune23ed1d.output
+$ /Users/jiayuangu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/px/pj81mm6x35q4m694lyhn3g0h0000gn/T/dune6e6df5.output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -119,3 +119,6 @@ $ /Users/jiayuangu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/px/
 #  }
 # Workspace root:
 # /Users/jiayuangu/Documents/cs3110/Monopoly_CS3110_final_project_fall_2021
+$ (cd _build/default && /Users/jiayuangu/.opam/cs3110-2021fa/bin/ocamlc.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -bin-annot -I bin/.main.eobjs/byte -I /Users/jiayuangu/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/jiayuangu/.opam/cs3110-2021fa/lib/biniou -I /Users/jiayuangu/.opam/cs3110-2021fa/lib/bytes -I /Users/jiayuangu/.opam/cs3110-2021fa/lib/easy-format -I /Users/jiayuangu/.opam/cs3110-2021fa/lib/yojson -I src/.game.objs/byte -no-alias-deps -opaque -o bin/.main.eobjs/byte/dune__exe__Main.cmo -c -impl bin/main.ml)
+$ (cd _build/default && /Users/jiayuangu/.opam/cs3110-2021fa/bin/ocamlopt.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /Users/jiayuangu/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/jiayuangu/.opam/cs3110-2021fa/lib/biniou -I /Users/jiayuangu/.opam/cs3110-2021fa/lib/bytes -I /Users/jiayuangu/.opam/cs3110-2021fa/lib/easy-format -I /Users/jiayuangu/.opam/cs3110-2021fa/lib/yojson -I src/.game.objs/byte -I src/.game.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /Users/jiayuangu/.opam/cs3110-2021fa/bin/ocamlopt.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -o bin/main.exe /Users/jiayuangu/.opam/cs3110-2021fa/lib/easy-format/easy_format.cmxa /Users/jiayuangu/.opam/cs3110-2021fa/lib/biniou/biniou.cmxa /Users/jiayuangu/.opam/cs3110-2021fa/lib/yojson/yojson.cmxa /Users/jiayuangu/.opam/cs3110-2021fa/lib/ocaml/unix.cmxa -I /Users/jiayuangu/.opam/cs3110-2021fa/lib/ocaml /Users/jiayuangu/.opam/cs3110-2021fa/lib/ANSITerminal/ANSITerminal.cmxa -I /Users/jiayuangu/.opam/cs3110-2021fa/lib/ANSITerminal src/game.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)

@@ -56,6 +56,8 @@ let update_pos game_map player steps =
   |> get_grid_by_index game_map
   |> create_player player.player_name player.balance player.properties
 
+(*Ocamlformat separates records into multiple lines, thus exceeding the
+  line limits*)
 let buy_land player map grid_index =
   let grid = get_grid_by_index map grid_index in
   match get_grid_type grid with
@@ -67,7 +69,7 @@ let buy_land player map grid_index =
                {
                  land_price = p;
                  ownership = get_player_name player;
-                 toll = 20. *. p;
+                 toll = 0.2 *. p;
                  level = 0;
                })
         in
@@ -80,6 +82,8 @@ let buy_land player map grid_index =
       else failwith "Not enough balance"
   | _ -> failwith "Cannot buy non-vacant land"
 
+(*Ocamlformat separates records into multiple lines, thus exceeding the
+  line limits*)
 let upgrade_land player map grid_index =
   let grid = get_grid_by_index map grid_index in
   match get_grid_type grid with
@@ -95,7 +99,7 @@ let upgrade_land player map grid_index =
                {
                  ol with
                  land_price = price *. 1.2;
-                 toll = price *. 1.2 *. 20.;
+                 toll = price *. 1.2 *. 0.2;
                  level = get_grid_level grid + 1;
                })
         in
@@ -165,7 +169,16 @@ let get_stay player = player.stay
 let update_stay (player : player) (new_time : int) =
   { player with stay = new_time }
 
-(** [hospital_or_jail_stay player map] is the [player] *)
+let print_hospital r =
+  print_endline
+    ("You will stay in Hospital for " ^ string_of_int r ^ "rounds.")
+
+let print_jail r =
+  print_endline
+    ("You will stay in Jail for " ^ string_of_int r ^ " rounds.")
+
+(* Ocamlformat splits let expressions into multiple lines, causing the
+   function below to exceed line limits*)
 let hospital_or_jail_stay player map =
   Random.self_init ();
   let hospital =
@@ -179,25 +192,26 @@ let hospital_or_jail_stay player map =
   if Random.int 2 = 0 then (
     Random.self_init ();
     let rounds = 1 + Random.int 3 in
-    print_endline
-      ("You will stay in Hospital for " ^ string_of_int rounds
-     ^ "rounds.");
+    print_hospital rounds;
     { player with curr_grid = hospital; stay = rounds })
   else (
     Random.self_init ();
     let rounds = 1 + Random.int 3 in
-    print_endline
-      ("You will stay in Jail for " ^ string_of_int rounds ^ " rounds.");
+    print_jail rounds;
     { player with curr_grid = jail; stay = rounds })
 
-(** [modify_land player map] is the [player] who either has one random
-    property upgraded or lose one random property and the updated map*)
+let print_no_property () =
+  print_endline
+    "Player does not have any property, so no property is confiscated."
+
+let print_upgrade i =
+  print_endline
+    ("The card upgrades your land at " ^ string_of_int i ^ ".\n")
+
 let modify_land player map =
   let properties = get_player_properties player in
   if List.length properties = 0 then (
-    print_endline
-      "Player does not have any property, so no property is \
-       confiscated.";
+    print_no_property ();
     (map, player))
   else (
     Random.self_init ();
@@ -205,9 +219,7 @@ let modify_land player map =
     let prop_idx = get_grid_index (List.nth properties rand_idx) in
     let up_or_lose = Random.int 2 in
     if up_or_lose = 0 then (
-      print_endline
-        ("The card upgrades your land at " ^ string_of_int prop_idx
-       ^ ".\n");
+      print_upgrade prop_idx;
       upgrade_land player map prop_idx)
     else (
       print_endline
@@ -215,6 +227,34 @@ let modify_land player map =
        ^ string_of_int prop_idx ^ ".\n");
       lose_land player map prop_idx))
 
+let print_pay payer_name toll recipient_name payer_balance =
+  print_endline
+    (payer_name ^ " paid the toll of " ^ string_of_float toll ^ " to "
+   ^ recipient_name ^ "\n --- " ^ payer_name ^ "'s remaining balance: "
+    ^ string_of_float (payer_balance -. toll))
+
+let print_receive_toll recipient_name recipient_balance toll =
+  print_endline
+    (recipient_name ^ " received the toll of " ^ string_of_float toll
+   ^ "\n ---" ^ recipient_name ^ "'s remaining balance: "
+    ^ string_of_float (recipient_balance +. toll))
+
+let print_trade_land payer h recipient =
+  print_endline
+    (get_player_name payer ^ "'s land at index "
+    ^ string_of_int (get_grid_index h)
+    ^ " is traded to make up the amount to pay the toll to "
+    ^ get_player_name recipient)
+
+let print_bankrupt payer_name =
+  print_endline
+    ("Oops, " ^ payer_name
+   ^ " don't have enough balance to pay the toll. " ^ payer_name
+   ^ " went bankrupt!")
+
+(*this [bankruptcy_toll] function handles paying and reciving tolls in
+  multiple cases involving many people and it is a recursive function so
+  the large bulk of function body can't be factored out*)
 let rec bankruptcy_toll payer_index recipient_index players map toll =
   let payer = players.(payer_index) in
   let recipient = players.(recipient_index) in
@@ -223,15 +263,8 @@ let rec bankruptcy_toll payer_index recipient_index players map toll =
   let payer_name = get_player_name payer in
   let recipient_name = get_player_name recipient in
   if payer_balance >= toll then (
-    print_endline
-      (payer_name ^ " paid the toll of " ^ string_of_float toll ^ " to "
-     ^ recipient_name ^ "\n --- " ^ payer_name
-     ^ "'s remaining balance: "
-      ^ string_of_float (payer_balance -. toll));
-    print_endline
-      (recipient_name ^ " received the toll of " ^ string_of_float toll
-     ^ "\n ---" ^ recipient_name ^ "'s remaining balance: "
-      ^ string_of_float (recipient_balance +. toll));
+    print_pay payer_name toll recipient_name payer_balance;
+    print_receive_toll recipient_name recipient_balance toll;
     players.(payer_index) <- update_balance payer (payer_balance -. toll);
     players.(recipient_index) <-
       update_balance recipient (recipient_balance +. toll);
@@ -239,20 +272,13 @@ let rec bankruptcy_toll payer_index recipient_index players map toll =
   else
     match get_player_properties payer with
     | h :: t ->
-        print_endline
-          (get_player_name payer ^ "'s land at index "
-          ^ string_of_int (get_grid_index h)
-          ^ " is traded to make up the amount to pay the toll to "
-          ^ get_player_name recipient);
+        print_trade_land payer h recipient;
         let tuple = sell_land payer map (get_grid_index h) 0.5 in
         players.(payer_index) <- snd tuple;
         bankruptcy_toll payer_index recipient_index players (fst tuple)
           toll
     | [] ->
-        print_endline
-          ("Oops, " ^ payer_name
-         ^ " don't have enough balance to pay the toll. " ^ payer_name
-         ^ " went bankrupt!");
+        print_bankrupt payer_name;
         players.(payer_index) <- update_stay payer (-1);
         players.(payer_index) <- update_balance players.(payer_index) 0.;
         print_endline
@@ -262,32 +288,35 @@ let rec bankruptcy_toll payer_index recipient_index players map toll =
           update_balance recipient (payer_balance +. recipient_balance);
         (map, players)
 
+let print_trade payer h =
+  print_endline
+    (get_player_name payer ^ "'s land at index "
+    ^ string_of_int (get_grid_index h)
+    ^ " is traded to make up the amount to pay the money")
+
+let print_lose amount payer_name cur_balance =
+  print_endline
+    ("you lose " ^ string_of_float amount ^ "$" ^ "\n ---" ^ payer_name
+   ^ " remaining balance: "
+    ^ string_of_float (cur_balance -. amount))
+
 let rec bankruptcy_lose payer_index players map amount =
   let payer = players.(payer_index) in
   let cur_balance = get_player_balance payer in
   let payer_name = get_player_name payer in
   if cur_balance >= amount then (
-    print_endline
-      ("you lose " ^ string_of_float amount ^ "$" ^ "\n ---"
-     ^ payer_name ^ " remaining balance: "
-      ^ string_of_float (cur_balance -. amount));
+    print_lose amount payer_name cur_balance;
     players.(payer_index) <- update_balance payer (cur_balance -. amount);
     (map, players))
   else
     match get_player_properties payer with
     | h :: t ->
-        print_endline
-          (get_player_name payer ^ "'s land at index "
-          ^ string_of_int (get_grid_index h)
-          ^ " is traded to make up the amount to pay the money");
+        print_trade payer h;
         let tuple = sell_land payer map (get_grid_index h) 0.5 in
         players.(payer_index) <- snd tuple;
         bankruptcy_lose payer_index players (fst tuple) amount
     | [] ->
-        print_endline
-          ("Oops, " ^ payer_name
-         ^ " don't have enough balance to pay the toll. " ^ payer_name
-         ^ " went bankrupt!");
+        print_bankrupt payer_name;
         players.(payer_index) <- update_stay payer (-1);
         (map, players)
 
